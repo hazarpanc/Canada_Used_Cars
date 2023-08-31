@@ -31,8 +31,8 @@ The preprocessing script includes various operations to clean and transform the 
   Missing values in the 'drivetrain' column were filled with 'AWD', and missing values in the 'province' column were filled with 'ontario'.
 
 - **Data Transformation**:
-  The 'transmission' column was transformed into a new binary column 'transmission_manual' indicating whether the transmission is manual or not. The 'province' was extracted from the 'url' column. The 'odometer' and 'price' values were cleaned by removing units, commas, and converting them from string to integers. The 'year' column was processed to calculate the time difference from a reference date and the age of the car at the day the data was scraped.
-  
+  The 'odometer' and 'price' values were cleaned by removing units, commas, and converting them from string to integers. The 'year' column was processed to calculate the time difference from a reference date and the age of the car at the day the data was scraped.
+
 - **Data Type Conversion**: Correct data types were set for the 'odometer', 'price', 'transmission_manual', and 'year' columns.
 
 -  **Removing Duplicates**: Any duplicate entries in the dataframe were identified and removed, keeping the last occurrence.
@@ -43,7 +43,12 @@ Outliers were identified for each car model using a function that calculated pri
 - **Filtering and Sanity Checks**:
 Rows were filtered based on certain conditions, such as removing rows with year values exceeding the next year and filtering out rows with unreasonable price and odometer values. These sanity checks helped maintain data integrity by ensuring values are within reasonable and expected ranges.
 
-- **Feature Engineering**: New features were engineered, such as 'days_since_reference' and 'car_age', to provide additional context and improve model performance.
+- **Feature Engineering**: New features were engineered to improve model performance.
+- 'days_since_reference' by calculating the time difference between a reference date and the day the data was scraped. This serves as a feature to capture the price trends in the used car market.
+- 'car_age' was created by calculating the number of years since the car's model year, including decimals, to provide additional context and improve model performance.
+- The 'transmission' column was transformed into a new binary column 'transmission_manual' indicating whether the transmission is manual or not.
+- The 'province' of the listing was extracted from the 'url' column. 
+
 - For more details on each of these steps, see the preprocess_dataframe function in the preprocessing.py script.
 
 ## 3) Model Training 
