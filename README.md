@@ -50,7 +50,7 @@ Rows were filtered based on certain conditions, such as removing rows with year 
   - The 'transmission' column was transformed into a new binary column 'transmission_manual' indicating whether the transmission is manual or not.
   - The 'province' of the listing was extracted from the 'url' column. 
 
-- For more details on each of these steps, see the preprocess_dataframe function in the preprocessing.py script.
+For more details on each of these steps, see the the preprocessing.py script.
 
 ## 3) Model Training 
 
