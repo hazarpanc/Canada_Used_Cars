@@ -3,7 +3,7 @@
 ## Project Overview
 Predicting the selling price of used cars is a critical task for both buyers and sellers in the pre-owned car market. Overpriced cars can lead to lost sales, while underpriced cars can lead to financial losses for the seller. This project aims to develop a machine learning model to predict used car prices accurately, helping both buyers and sellers make informed decisions.
 
-This repository hosts a machine learning pipeline to predict the selling price of used cars based on various attributes. The pipeline encompasses data scraping, cleaning, preprocessing, feature engineering, model training, and deployment. Finally, the model was deployed on an AWS EC2 instance and is able to provide real-time predictions through my project website.
+This repository contains a machine learning pipeline designed to predict the selling price of used cars based on various attributes. The pipeline encompasses data scraping, cleaning, preprocessing, feature engineering, model training, and deployment. Finally, the model was deployed on an AWS EC2 instance and is able to provide real-time predictions through my project website.
 
 ## Project Steps
 
