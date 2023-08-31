@@ -43,3 +43,24 @@ Rows were filtered based on certain conditions, such as removing rows with year 
 
 - **Feature Engineering**: New features were engineered, such as 'days_since_reference' and 'car_age', to provide additional context and improve model performance.
 - For more details on each of these steps, see the preprocess_dataframe function in the preprocessing.py script.
+
+## 3) Model Training 
+
+Several models were experimented with during the development phase, including XGBoost. However, LightGBM was ultimately chosen due to its speed and efficiency advantages over XGBoost in terms of both memory usage and computation speed.
+
+The final model was trained using LightGBM Regression. The features used for training the model are: 'make', 'model', 'odometer', 'bodytype', 'trim', 'year', 'drivetrain', 'fetchdate', 'transmission_manual', 'province', 'days_since_reference', 'car_age'. The target variable is 'price'.
+
+The script executes the following steps:
+
+1.  **Data Loading**: Loads a cleaned dataset from a CSV file. The dataset contains various features of used cars which will be used to predict the prices.
+2.  **Data Encoding**: Encodes the categorical features using target encoding and ordinal encoding. This is a crucial step as it converts categorical data into a format that can be fed into the model.
+3.  **Data Splitting**: Splits the data into training, validation, and test sets based on the fetch date. This ensures that the model is trained and tested on different sets of data to avoid overfitting.
+4.  **Model Training**: Train a LightGBM model using the training and validation sets. 
+5.  **Model Evaluation**: Evaluates the model on the test set. This step is crucial to understand how well the model will perform on unseen data.
+6.  **Hyperparameter Optimization**: Optimizes the hyperparameters of the LightGBM model using Optuna (hyperparameter optimization framework).
+7.  **Final Model Training**: Trains the final LightGBM model using the optimized hyperparameters and the whole dataset. This ensures that the model is trained on the most amount of data possible, thereby improving its prediction capability.
+8.  **Model Saving**: Saves the trained model, target encoder, and ordinal encoder to files. This step ensures that the model and encoders can be reused in the future without retraining.
+
+**Best Practices**
+
+Best practices have been followed throughout the development of this script. Exception handling has been used wherever necessary to ensure that the script does not crash due to minor issues. Logging has been used to record the flow of the script and any issues that may arise. This ensures that any issues can be easily tracked and resolved. Other best practices include using functions for code modularity and reusability, and following the PEP 8 style guide for Python code. Additionally, the code is well-documented with comments and docstrings to ensure it is easy to understand and modify.
