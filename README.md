@@ -68,3 +68,6 @@ Best practices have been followed throughout the development of this script. Exc
 **Results**
 
 After tuning the model with Optuna and training it on the entire dataset, the model achieved a Mean Absolute Percentage Error (MAPE) of 0.05 on the test set. This performance is satisfactory and indicates that the model is capable of making reasonably accurate predictions on the car prices.
+
+## 4) Model Deployment: 
+I deployed the trained model to an AWS EC2 instance as an API, and it is able to provide real-time predictions of a car's selling price based on the given attributes. The API is served as a web application through my project website carvalu.ca
