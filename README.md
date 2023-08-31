@@ -66,4 +66,5 @@ The script executes the following steps:
 Best practices have been followed throughout the development of this script. Exception handling has been used wherever necessary to ensure that the script does not crash due to minor issues. Logging has been used to record the flow of the script and any issues that may arise. This ensures that any issues can be easily tracked and resolved. Other best practices include using functions for code modularity and reusability, and following the PEP 8 style guide for Python code. Additionally, the code is well-documented with comments and docstrings to ensure it is easy to understand and modify.
 
 **Results**
+
 After tuning the model with Optuna and training it on the entire dataset, the model achieved a Mean Absolute Percentage Error (MAPE) of 0.05 on the test set. This performance is satisfactory and indicates that the model is capable of making reasonably accurate predictions on the car prices.
