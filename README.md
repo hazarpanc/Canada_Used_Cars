@@ -8,7 +8,7 @@ This repository contains a machine learning pipeline designed to predict the sel
 ## Project Steps
 
 ## 1) Data Collection
-**Data Collection**: I collected the data by web scraping multiple used car listing websites periodically over two years. I wrote a custom script to automate the scraping process, leveraging two popular Python libraries. Selenium to automate the web browser interaction, and BeautifulSoup to parse the HTML content and extract the required data points. I configured the script to run at bi-weekly intervals to collect the most up-to-date data available. It collected data from multiple pages and websites to build a comprehensive dataset of used car listings.
+**Data Collection**: I collected the data by web scraping multiple used car listing websites periodically over two years. I wrote a custom script to automate the scraping process, leveraging two Python libraries: Selenium, for automating web browser interaction, and BeautifulSoup, for parsing HTML content and extracting required data points. I configured the script to run at bi-weekly intervals to collect the most up-to-date data available. It collected data from multiple pages and websites to build a comprehensive dataset of used car listings.
 
 **Data Storage:** I adopted a strategic approach to manage the data collected during the weekly scraping sessions efficiently. The weekly scraped data was stored in individual CSV files, each representing one week's worth of data. This approach was not only flexible and scalable but also facilitated data backup and version control. 
 
@@ -19,7 +19,7 @@ I wrote a preprocessing script to ensure that the collected data is cleaned, sta
 
 In the development of this preprocessing script, I adopted several best practices to ensure robustness and maintainability. Exception handling is incorporated to manage unexpected errors gracefully, and logging is used to facilitate debugging and monitoring. The code is modular, with functions, comments, and docstrings used to enhance readability and reusability. I unit tested the functions to make sure they behave as expected.
 
-The preprocessing script includes various operations to clean and transform the data like standardization, missing value imputation, data transformation, outlier removal, mapping, filtering, sanity checks, data type conversion, and removing duplicates. 
+The preprocessing script includes various operations to clean and transform the data, such as standardization, missing value imputation, data transformation, outlier removal, mapping, filtering, sanity checks, data type conversion, and removing duplicates.
 
 - **Standardization**: 
   This included converting all string columns values to lowercase, standardizing transmission, body type values by applying specific mappings. Some examples to this are:
@@ -45,7 +45,7 @@ Rows were filtered based on certain conditions, such as removing rows with year 
 
 - **Feature Engineering:**
   New features were engineered to improve model performance.
-  - 'days_since_reference' by calculating the time difference between a reference date and the day the data was scraped. This serves as a feature to capture the price trends in the used car market.
+  - 'days_since_reference' was calculated by determining the time difference between a reference date and the day the data was scraped. I created this feature for the model to capture the changes in price trends in the used car market.
   - 'car_age' was created by calculating the number of years since the car's model year, including decimals, to provide additional context and improve model performance.
   - The 'transmission' column was transformed into a new binary column 'transmission_manual' indicating whether the transmission is manual or not.
   - The 'province' of the listing was extracted from the 'url' column. 
