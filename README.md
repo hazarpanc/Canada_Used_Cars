@@ -43,7 +43,8 @@ Outliers were identified for each car model using a function that calculated pri
 - **Filtering and Sanity Checks**:
 Rows were filtered based on certain conditions, such as removing rows with year values exceeding the next year and filtering out rows with unreasonable price and odometer values. These sanity checks helped maintain data integrity by ensuring values are within reasonable and expected ranges.
 
-- **Feature Engineering**: New features were engineered to improve model performance.
+- **Feature Engineering**:
+  New features were engineered to improve model performance.
 - 'days_since_reference' by calculating the time difference between a reference date and the day the data was scraped. This serves as a feature to capture the price trends in the used car market.
 - 'car_age' was created by calculating the number of years since the car's model year, including decimals, to provide additional context and improve model performance.
 - The 'transmission' column was transformed into a new binary column 'transmission_manual' indicating whether the transmission is manual or not.
