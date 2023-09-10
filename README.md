@@ -7,9 +7,6 @@ This repository contains the machine learning pipeline I built for this purpose.
 
 ![Website](https://carvalu.ca/images/website_ss2.jpg)
 
-## Technologies and Frameworks Used in This Project
-![Skills](https://carvalu.ca/images/skills_map.png)
-
 ## Project Steps
 
 ![Process](https://carvalu.ca/images/process_pipeline.png)
@@ -98,3 +95,6 @@ I deployed the trained model to an AWS EC2 instance as an API, and it is able to
 ## Results
 
 The model achieved a Mean Absolute Percentage Error (MAPE) of 5% on the test data, which is a satisfactory performance considering the nature of the used car listings data. The data is inherently noisy and contains several unobserved factors that can significantly affect the car prices. For example, the condition of the car, any previous accidents, and the fairness of the dealer's pricing strategy, all play a crucial role in determining the car's price. However, not all of this information is available in the dataset. Given these challenges and unobserved factors, a 5% MAPE indicates that the model is capable of making reasonably accurate predictions on the car prices.
+
+## Technologies and Frameworks Used in This Project
+![Skills](https://carvalu.ca/images/skills_map.png)
