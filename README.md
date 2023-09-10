@@ -5,7 +5,7 @@ Predicting the selling price of used cars is a critical task for both buyers and
 
 This repository contains the machine learning pipeline I built for this purpose. The pipeline encompasses data scraping, cleaning, preprocessing, feature engineering, model training, and deployment. Finally, the model was deployed on an AWS EC2 instance and is able to provide real-time predictions through my project website.
 
-![Website](https://carvalu.ca/images/website_ss.jog)
+![Website](https://carvalu.ca/images/website_ss.jpg)
 
 ## Technologies and Frameworks Used in This Project
 ![Skills](https://carvalu.ca/images/skills_map.png)
