@@ -21,13 +21,6 @@ I developed a script to merge the individual CSV files into a single comprehensi
 ## 2) Data Preprocessing
 I wrote a preprocessing script to ensure that the collected data is cleaned, standardized and ready for model training. 
 
-Before:
-![Before](https://carvalu.ca/images/before.jpg)
-
-After:
-![After](https://carvalu.ca/images/after.jpg)
-
-
 In the development of this preprocessing script, I adopted several best practices to ensure robustness and maintainability. Exception handling is incorporated to manage unexpected errors gracefully, and logging is used to facilitate debugging and monitoring. The code is modular, with functions, comments, and docstrings used to enhance readability and reusability. I unit tested the functions to make sure they behave as expected.
 
 The preprocessing script includes various operations to clean and transform the data, such as standardization, missing value imputation, data transformation, outlier removal, mapping, filtering, sanity checks, data type conversion, and removing duplicates.
@@ -63,6 +56,13 @@ Rows were filtered based on certain conditions, such as removing rows with year 
   - The 'province' of the listing was extracted from the 'url' column. 
 
 For more details on each of these steps, see the the preprocessing.py script.
+
+
+Before Preprocessing:
+![Before](https://carvalu.ca/images/before.jpg)
+
+After Preprocessing:
+![After](https://carvalu.ca/images/after.jpg)
 
 ## 3) Model Training 
 
