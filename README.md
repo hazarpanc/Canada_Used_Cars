@@ -3,7 +3,7 @@
 ## Project Overview
 Predicting the selling price of used cars is a critical task for both buyers and sellers in the pre-owned car market. Overpriced cars can lead to lost sales, while underpriced cars can lead to financial losses for the seller. This project aims to develop a machine learning model to predict used car prices accurately, helping both buyers and sellers make informed decisions.
 
-This repository contains a machine learning pipeline designed to predict the selling price of used cars based on various attributes. The pipeline encompasses data scraping, cleaning, preprocessing, feature engineering, model training, and deployment. Finally, the model was deployed on an AWS EC2 instance and is able to provide real-time predictions through my project website.
+This repository contains the machine learning pipeline I built for this purpose. The pipeline encompasses data scraping, cleaning, preprocessing, feature engineering, model training, and deployment. Finally, the model was deployed on an AWS EC2 instance and is able to provide real-time predictions through my project website.
 
 ## Project Steps
 
@@ -16,6 +16,13 @@ I developed a script to merge the individual CSV files into a single comprehensi
 
 ## 2) Data Preprocessing
 I wrote a preprocessing script to ensure that the collected data is cleaned, standardized and ready for model training. 
+
+Before:
+![After]([URL](https://carvalu.ca/images/before.jpg))
+
+After:
+![After](https://carvalu.ca/images/after.jpg)
+
 
 In the development of this preprocessing script, I adopted several best practices to ensure robustness and maintainability. Exception handling is incorporated to manage unexpected errors gracefully, and logging is used to facilitate debugging and monitoring. The code is modular, with functions, comments, and docstrings used to enhance readability and reusability. I unit tested the functions to make sure they behave as expected.
 
