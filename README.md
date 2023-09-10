@@ -87,9 +87,12 @@ Best practices have been followed throughout the development of this script.
 - The code is well-documented with comments and docstrings to ensure it is easy to understand and modify.
 - Other best practices include using functions for code modularity and reusability, and following the PEP 8 style guide for Python code.
 
-**Results**
+## 4) Model Deployment: 
+I deployed the trained model to an AWS EC2 instance as an API, and it is able to provide real-time predictions of a car's selling price based on the given attributes. The API is served as a web application through my project website carvalu.ca
+
+## Results
 
 The model achieved a Mean Absolute Percentage Error (MAPE) of 5% on the test data, which is a satisfactory performance considering the nature of the used car listings data. The data is inherently noisy and contains several unobserved factors that can significantly affect the car prices. For example, the condition of the car, any previous accidents, and the fairness of the dealer's pricing strategy, all play a crucial role in determining the car's price. However, not all of this information is available in the dataset. Given these challenges and unobserved factors, a 5% MAPE indicates that the model is capable of making reasonably accurate predictions on the car prices.
 
-## 4) Model Deployment: 
-I deployed the trained model to an AWS EC2 instance as an API, and it is able to provide real-time predictions of a car's selling price based on the given attributes. The API is served as a web application through my project website carvalu.ca
+## Technologies and Frameworks Used in This Project
+![Skills](https://carvalu.ca/images/skills_map.png)
