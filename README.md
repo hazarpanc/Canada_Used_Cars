@@ -18,7 +18,7 @@ I developed a script to merge the individual CSV files into a single comprehensi
 I wrote a preprocessing script to ensure that the collected data is cleaned, standardized and ready for model training. 
 
 Before:
-![After]([URL](https://carvalu.ca/images/before.jpg))
+![After]([URL](https://carvalu.ca/images/before.jpg)
 
 After:
 ![After](https://carvalu.ca/images/after.jpg)
