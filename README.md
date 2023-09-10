@@ -59,10 +59,10 @@ Rows were filtered based on certain conditions, such as removing rows with year 
 For more details on each of these steps, see the the preprocessing.py script.
 
 
-Before Preprocessing:
+**Before Preprocessing:**
 ![Before](https://carvalu.ca/images/before.jpg)
 
-After Preprocessing:
+**After Preprocessing:**
 ![After](https://carvalu.ca/images/after.jpg)
 
 ## 3) Model Training 
