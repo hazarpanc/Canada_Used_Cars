@@ -43,6 +43,7 @@ The preprocessing script includes various operations to clean and transform the 
 
 - **Outlier Removal**:
 Outliers were identified for each car model using a function that calculated price percentiles and then compared each price to an upper and lower threshold (1.5 times the interquartile range above the third quartile and below the first quartile, respectively).
+
 ![Outliers](https://carvalu.ca/images/outliers.jpg)
 
 - **Filtering and Sanity Checks**:
