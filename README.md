@@ -7,6 +7,8 @@ This repository contains the machine learning pipeline I built for this purpose.
 
 ## Project Steps
 
+![Process](https://carvalu.ca/images/process_pipeline.png)
+
 ## 1) Data Collection
 **Data Collection**: I collected the data by web scraping multiple used car listing websites periodically over two years. I wrote a custom script to automate the scraping process, leveraging two Python libraries: Selenium, for automating web browser interaction, and BeautifulSoup, for parsing HTML content and extracting required data points. I configured the script to run at bi-weekly intervals to collect the most up-to-date data available. It collected data from multiple pages and websites to build a comprehensive dataset of used car listings.
 
@@ -45,7 +47,8 @@ The preprocessing script includes various operations to clean and transform the 
 -  **Removing Duplicates**: Any duplicate entries in the dataframe were identified and removed, keeping the last occurrence.
 
 - **Outlier Removal**:
-Outliers were identified for each car model using a function that calculated price percentiles and then compared each price to an upper and lower threshold (1.5 times the interquartile range above the third quartile and below the first quartile, respectively). 
+Outliers were identified for each car model using a function that calculated price percentiles and then compared each price to an upper and lower threshold (1.5 times the interquartile range above the third quartile and below the first quartile, respectively).
+![Outliers](https://carvalu.ca/images/outliers.jpg)
 
 - **Filtering and Sanity Checks**:
 Rows were filtered based on certain conditions, such as removing rows with year values exceeding the next year and filtering out rows with unreasonable price and odometer values. These sanity checks helped maintain data integrity by ensuring values are within reasonable and expected ranges.
