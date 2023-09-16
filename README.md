@@ -7,6 +7,8 @@ This repository contains the machine learning pipeline I built for this purpose.
 
 ![Website](https://carvalu.ca/images/website_ss3.jpg)
 
+[![Visit My Project Website](https://www.carvalu.ca/images/github_cta_button.png)](https://carvalu.ca)
+
 ## Project Steps
 
 ![Process](https://carvalu.ca/images/process_pipeline.png)
